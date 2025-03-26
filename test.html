@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>Bhaswara-2024</title>
+  <meta
+    content="Bhaswara-2024 Offical Website, National Level Tech Fest Conducted at Geethanjali College of Engineering and Technology"
+    name="description" />
+  <meta
+    content="Geethanjali College Of Engineering and Technology,GCP, GCET, GCTC, GCTCPORTAL, Kalyan Mudumby, Pranay Kumar, Komuravelly Ashish, Uday Param"
+    name="keywords" />
+  <meta name="author" content="Pranay Kumar">
+  <meta name="author" content="Komuravelly Ashish">
+  <meta name="author" content="Uday Param">
+
+
+  <link href="assets/img/favicon.png" rel="icon" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <style>
+
+
+#time h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+.nav-item,
+.nav-link,
+a.navbar-brand {
+  color: white;
+}
+
+.main{
+  height:100vh;
+  width:100%; 
+  background-image: url("assets/img/clg-dark.webp");
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+ .main h1{
+  text-align:center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #F1FAEE; 
+  font-size: 5rem;
+}
+
+.roller{
+  height: 4.2rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #FF7F50;
+}
+
+
+#spare-time{
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #A8DADC;
+  
+}
+
+#note{
+  font-size: 3rem;
+  font-weight: bold;
+  color: blue;
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;  
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  h1{
+  text-align:center;
+  color: #F1FAEE; 
+  font-size: 2.125rem;
+}
+  
+  .roller{
+  height: 2.6rem; 
+  line-height: 2.125rem;  
+  }
+  
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .roller #rolltext {  
+  animation: slide-mob 5s infinite;  
+}
+  
+  @keyframes slide-mob {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -2.125rem;    
+  }
+  50%{
+    top: -4.25rem;
+  }
+  72.5%{
+    top: -6.375rem;
+  }
+}
+}
+
+button.clicked {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.about-title h1 {
+  margin-top: -30px;
+  margin-bottom: -40px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #0f394c;
+  text-align: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+.note h1{
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #0f394c;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="./index.html" class="logo">
+        BHASWARA
+      </a>
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li>
+            <a class="nav-link scrollto active" href="./index.html">Home</a>
+          </li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li>
+            <a class="nav-link scrollto" href="#event">Events</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="#coordinators">coordinators</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="posters.html">Posters</a>
+          </li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="main">
+    <h1>BHASWARA - 2K25<div class="roller">
+      <span id="rolltext">
+        15<sup>th</sup> and 16<sup>th</sup> April<br/>
+        GCET<br/>
+      <span id="spare-time">GET READY!</span><br/>
+      </div>
+      </h1>
+      
+    </div>
+
+  <div class="about-title py-5 pb-0" id="about">
+    <h1>About Geethanjali</h1>
+  </div>
+
+  <main id="main">
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 d-flex justify-content-center position-relative">
+            <img src="assets/img/chair-princi.webp" class="img-fluid" alt="" />
+          </div>
+
+          <div class="col-xl-7 col-lg-6 p-3 icon-boxes d-flex justify-content-center px-lg-5">
+            <p>
+              Geethanjali College of Engineering & Technology has been
+              structured to take head on the changing trends of technology.
+              The idea of setting up the college emerged when no other college
+              could cater to the needs of a student in his/her endeavor to
+              acquire wholesome education. The very strength of Geethanjali
+              lies in its principles of providing the right learning
+              environment for the student who does not have to compromise
+              throughout the learning process of becoming global citizen. The
+              college recognizes that the rapidly changing technological
+              landscape would require young technocrats with an understanding
+              of evolving technologies, but also with a global perspective. A
+              major goal of Geethanjali is to impart a uniquely broad and
+              interdisciplinary Engineering education of the highest academic
+              quality. This is achieved through an integrated curriculum that
+              consists of a highly diverse set of technical courses,
+              interdisciplinary research projects, day-to-day interaction with
+              industry, and preparation in entrepreneurship and personality
+              development courses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="counts" class="counts">
+      <div class="container">
+        <div class="text-center title">
+          <h3>About Bhaswara</h3>
+          <p>Some important statistics</p>
+        </div>
+
+        <div class="row counters position-relative">
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="56" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of faculty and students</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of coordinators</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of Events</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="364" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of students participated in Bhaswara 2022</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="event" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Events</h2>
+          <p>
+            “Bhaswara-2k24” is the 17th Edition of the Technical and Management Fest, an Annual Event
+            of the Geethanjali College of Engineering and Technology, Keesara, Medchal (GCET). At the
+            outset we, the Conveners wholeheartedly congratulate you all for the participation of
+            Bhaswara-2k24 being held during March 21-22, 2024.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-cse">CSE</li>
+              <li data-filter=".filter-it">IT</li>
+              <li data-filter=".filter-ece">ECE</li>
+              <li data-filter=".filter-eee">EEE</li>
+              <li data-filter=".filter-civil">CIVIL</li>
+              <li data-filter=".filter-mech">MECH</li>
+              <li data-filter=".filter-mba">MBA</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cse">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cse.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#cse-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cse">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/aiml.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#aiml-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cse">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/cseea.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#cse-ea-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ece">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/ece.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#ece-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eee">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/eee.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-civil">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/civil.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#civil-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mech">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/mech.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#mech-common-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mba">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/mba.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#mba-common-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-it">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/it.webp" class="img-fluid" alt="" />
+              <div class="portfolio-info">
+                <div class="portfolio-links">
+                  <a href="./events.html#it-events" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
+                <h3>Mr. G.R. Ravinder Reddy</h3>
+                <h4>Chairman</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I welcome you all to BHASWARA-2k24, the annual technical fest of Geethanjali College
+                  of Engineering and Technology, Science and Technology has evolved enormously adding new dimensions to
+                  our knowledge.
+                  Right from Stone Age to this modern era human race has witnessedit all. Today almost every
+                  single of automation, object that welcome across is a thoughtful implementation of science and
+                  technology.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
+                <h3>Dr. S.Udaya Kumar</h3>
+                <h4>Principal</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  It is indeed a matter of utmost pleasure for me to welcome you all to BHASWARA
+                  – 2024, the annual technical fest of Geethanjali College of Engineering and Technology.
+                  Over a past few years our college has played a pivotal role in imparting technical
+                  knowledge to the students.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
+                <h3>Prof Dr. L. Venkateswarlu</h3>
+                <h4>Convener</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  “Bhaswara-2k24” is the 17th Edition of the Technical and Management Fest, an Annual Event
+                  of the Geethanjali College of Engineering and Technology, Keesara, Medchal (GCET). At the
+                  outset we, the Conveners wholeheartedly congratulate you all for the participation of
+                  Bhaswara-2k24 being held during March 21-22, 2024.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="" />
+                <h3>Dr. L. Kiran Kumar Reddy</h3>
+                <h4>Co-Convener</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  On behalf of the entire organizing team of Bhaswara-2k24 and on our own behalf, we thank
+                  all the student participants for the excellent competitive spirit, members of the Bhaswara2k24
+                  organizing, and core teams, Competitions Jury, the Institute’s Academic Departments, and
+                  service units, Depts., Without Support from the Chairman, Teja Educational Society: Sri. G.
+                  Ravindar Reddy garu and a constant encouragement by the Principal: Prof. Dr. Udaya Kumar
+                  Susarla garu this Bhaswara-2k24 could not have been made possible.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="coordinators" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>coordinators</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li onclick="myFunctioncommon()">Common Events</li>
+              <li onclick="myFunctioncse()">CSE</li>
+              <li onclick="myFunctionaiml()">AI-ML</li>
+              <li onclick="myFunctioncseea()">CSE-EA</li>
+              <li onclick="myFunctionece()">ECE</li>
+              <li onclick="myFunctioneee()">EEE</li>
+              <li onclick="myFunctioncivil()">CIVIL</li>
+              <li onclick="myFunctionmech()">MECH</li>
+              <li onclick="myFunctionmba()">MBA</li>
+              <li onclick="myFunctionit()">IT</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <span id="demo1" style="color:var(--primary-color); font-size: 50px; text-align: center">CSE</span><br />
+
+          <div class="col-lg-2 col-md-3 pb-3">
+          </div>
+
+          <div class="col-lg-3 col-md-3 align-items-center pb-3">
+            <br />
+            <span id="demo4" style="color:var(--primary-color); font-size: 20px; font-weight: bold">Faculty
+              Coordinators</span><br />
+            <span id="demo5" style="color: #333333; font-size: 20px">Dr. G. Somashekar<br />
+              Ph no: 9849965314<br /><br />
+              Mr. R V Sudhakar<br />
+              Ph no: 9705006254</span><br />
+            <br />
+          </div>
+
+          <div class="col-lg-3 col-md-3 pb-3">
+            <br />
+            <span id="demo2" style="color:var(--primary-color); font-size: 20px; font-weight: bold">Student
+              Coordinators</span><br />
+            <span id="demo3" style="color: #333333; font-size: 20px">G. Mudith Reddy<br />
+              Ph no: 9100641041<br /><br />
+              D S Soujanya<br />
+              Ph no: 7331102302</span><br />
+            <br />
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+            <br />
+            <span style="color:var(--primary-color); font-size: 25px; font-weight: bold">Convener</span><br />
+            <span style="color: #333333; font-size: 20px">Dr. L. Venkateswarlu </span><br /><br />
+            <span style="color:var(--primary-color); font-size: 25px; font-weight: bold">Co Convener</span><br />
+            <span style="color: #333333; font-size: 20px">Dr. L. Kiran Kumar Reddy</span><br />
+            <span style="color: #333333; font-size: 20px">Mrs.T.J .Deepika</span><br />
+            &nbsp;
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Get all buttons on the page
+        var buttons = document.querySelectorAll("button");
+
+        // Add a click event listener to each button
+        buttons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            // Remove the 'clicked' class from all buttons
+            buttons.forEach(function (button) {
+              button.classList.remove("clicked");
+            });
+            // Add the clcked class to be clicke d again for the purpose of adding and removing the class elements
+            //This can be used for the pupose of
+            this.classList.add("clicked");
+          });
+        });
+      </script>
+
+      <script>
+        function myFunctioncse() {
+          document.getElementById("demo1").innerHTML = "CSE";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "G. Mudith Reddy <br>Ph no: 9100641041<br><br>D S Soujanya<br>Ph no: 7331102302";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Dr. G. Somashekar<br>Ph no: 9849965314<br><br>Mr. R V Sudhakar <br>Ph no:  9705006254";
+        }
+
+        function myFunctioncommon() {
+          document.getElementById("demo1").innerHTML = "Common Events";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "R Gayatri Sushmitha <br>Ph no: 6301453702<br><br>K Tanvi Shivani<br>Ph: 7702060841";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Dr. A Venkat Ramana<br>Ph: 9052807324 <br><br>Mrs. G Uma Devi<br>Ph: 9963899834";
+        }
+
+        function myFunctionaiml() {
+          document.getElementById("demo1").innerHTML = "AI-ML";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "S. Yokesh <br>Ph no:  9381283713 <br><br>Y. Samhitha <br> Ph no: 7731811704 <br><br> T Nitin <br>Ph no: 9177822274";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Mr. G. Vedavyas<br>Ph no: 8328233728 <br><br>Mrs. G. Alekhya <br>Ph no: 9515949404 <br>";
+        }
+
+        function myFunctioncseea() {
+          document.getElementById("demo1").innerHTML = "CSE-EA";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "C. Shivani <br>Ph no: 8897592578<br><br>Saketh Ram<br>Ph: 6281296378";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Rahul Das<br>Ph: 9676338610<br><br>G. Himabindu<br>Ph: 8639459234";
+        }
+
+        function myFunctionit() {
+          document.getElementById("demo1").innerHTML = "IT";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "Praveen <br>Ph no: 8309258562 <br><br> Harshith <br>Ph no: 7396204776";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "G. Ashok <br>Ph no: 9959567672 <br><br> B. Ramavath<br>Ph no: 9866249653";
+        }
+
+        function myFunctionece() {
+          document.getElementById("demo1").innerHTML = "ECE";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "G. Nitish Kumar <br>Ph no:8142002615<br><br>A. Sai Tejasvini<br>Ph: ";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "U. Appala Raju<br>Ph:9848889764 <br><br>Mr R.Odaiah<br>Ph: 9908005296";
+        }
+
+        function myFunctioneee() {
+          document.getElementById("demo1").innerHTML = "EEE";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "N. Tharun Kumar<br>Ph: 9398416414<br><br>M. Shirisha<br>Ph: 9346708798";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Mr. J. Lingappa<br>Ph: 70130062139<br><br>Mr. J. Kishore Babu<br>Ph: 7842166253";
+        }
+
+        function myFunctionmech() {
+          document.getElementById("demo1").innerHTML = "MECH";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "Karthik Bhagat<br>Ph: 8639924146<br><br>A. Sai Ganesh Sagar<br>Ph: 7620723050";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Mr P.Sudheer Rao<br>Ph: 7032985115<br><br>Mr P.Sandeep Kumar<br>Ph: 8978451261";
+        }
+
+        function myFunctioncivil() {
+          document.getElementById("demo1").innerHTML = "CIVIL";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "K. Bhavyashree <br>Ph no:9573940367<br><br>V. Jayanth Sakar<br>Ph: 8978130604";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Mr. N Kranthi kumar<br>Ph: 9390184465<br><br.Mrs. K Keerthi<br>Ph: 7702785157";
+        }
+
+        function myFunctionmba() {
+          document.getElementById("demo1").innerHTML = "MBA";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "N. Bhanu Prasad<br>Ph no:7780690102<br><br>N. Pooja<br>Ph: 6304120382";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "Mrs. Shahnaz Begum<br>Mrs. K Lavanya<br><br>Ph: 8500179169";
+        }
+      </script>
+    </section>
+    <div class="section-title">
+    <h2>
+      Students outside GCET and GCP must bring their college ID Cards as proof
+      of Identity
+    </h2>
+    </div>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <iframe style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.726799085031!2d78.62883861450712!3d17.520550287998926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d3704b16971%3A0x522242e0977760ef!2sGeethanjali%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1654660505448!5m2!1sen!2sin"
+              frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="info">
+              <br />
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>
+                  Cheeryala(V)<br />
+                  Keesara(M), Medchal Dist.<br />
+                  Telangana,INDIA<br />
+                  PIN: 501301
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>bhaswara@gcet.edu.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h3>Geethanjali College of Engineering and Technology</h3>
+            <p>
+              Cheeryala(V)<br />
+              Keesara(M), Medchal Dist.<br />
+              Telangana,INDIA<br />
+              PIN: 501301
+              <br /><br />
+
+              <strong>Email:</strong>bhaswara@gcet.edu.in<br />
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Home</a></li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="./index.html#about">About Us</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="./events.html">Events</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="./index.html#coordinators">Coordinators</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="./posters.html">Posters</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/GCTCPORTAL" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/groups/gctcportal" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/gctcportal/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/gctc-portal-03a4493a" class="linkedin"><i
+                  class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        <p>
+          &copy; Designed by
+          <strong><span><a href="https://instagram.com/ashish_komuravelly?igshid=Zjc2ZTc4Nzk=">Ashish</a></span></strong>
+          and <strong><span>
+            <a href="https://www.gctcportal.in/p/team.html#">Uday Param</a></span></strong> | Maintained By
+          <strong><a href="http://www.gctcportal.in">Team GCTCPORTAL</a></strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
