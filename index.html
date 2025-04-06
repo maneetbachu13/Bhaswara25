@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+  <title>Bhaswara-2025</title>
+  <meta
+    content="Bhaswara-2024 Offical Website, National Level Tech Fest Conducted at Geethanjali College of Engineering and Technology"
+    name="description" />
+  <meta
+    content="Geethanjali College Of Engineering and Technology,GCP, GCET, GCTC, GCTCPORTAL, Kalyan Mudumby, Pranay Kumar, Komuravelly Ashish, Uday Param, Maneet Bachu"
+    name="keywords" />
+  <meta name="author" content="Maneet Bachu">
+  <meta name="author" content="Uday Param">
+
+
+  <link href="assets/img/favicon.png" rel="icon" />
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+img {
+  width: 100%;
+  height: inherit;
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.zoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px; /* Reduced padding */
+    transition: transform 0.2s; /* Animation */
+    margin: 0 auto;
+}
+.zoom img {
+    max-width: 380px; /* Adjust this value as needed */
+    max-height: 300px; /* Adjust this value as needed */
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
+}
+      
+      .zoom:hover {
+        transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      }
+
+#time h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+.nav-item,
+.nav-link,
+a.navbar-brand {
+  color: white;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  background-image: url("assets/img/clg-dark.webp");
+  background-size: cover; /* This property ensures that the background image covers the entire container */
+  background-position: center; /* This property centers the background image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.main h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #F1FAEE;
+  font-size: 4.5rem;
+  max-width: 80%; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the text */
+}
+
+.roller {
+  height: 4.2rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #00f;
+}
+
+#spare-time {
+  font-size: 1rem;
+  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #5bb5b8;
+}
+
+#note {
+  font-size: 3rem;
+  font-weight: bold;
+  color: blue;
+}
+.typing-container {
+            display: inline-block;
+            border-right: 3px solid white;
+            white-space: nowrap;
+            overflow: hidden;
+}
+.roller #rolltext {
+  position: absolute;
+  font-weight: bolder;
+  top: 0;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+  72.5% {
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main h1 {
+    font-size: 2.5rem; /* Adjust the font size for mobile */
+  }
+
+  .roller {
+    height: 3.1rem;
+    line-height: 2.5rem;
+  }
+
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+
+  @keyframes slide-mob {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -2.6rem;
+    }
+    50% {
+      top: -5.1rem;
+    }
+    72.5% {
+      top: -7.9rem;
+    }
+  }
+}
+
+.button.clicked {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  margin: 20px 0;
+}
+
+.about-title h1 {
+  margin-top: -30px;
+  margin-bottom: -40px;
+  padding: 10px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #0f394c;
+  text-align: center;
+}
+
+button:focus {
+  outline: none;
+}
+
+.note h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #0f394c;
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="./index.html" class="logo">
+        BHASWARA 2025
+      </a>
+
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li>
+            <a class="nav-link scrollto active" href="./index.html">Home</a>
+          </li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li>
+            <a class="nav-link scrollto" href="#event">Events</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="#coordinators">coordinators</a>
+          </li>
+          <li>
+            <a class="nav-link scrollto" href="posters.html">Posters</a>
+          </li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="main">
+    <h1>BHASWARA - 2K25<h1>
+      <span class="roller typing-container" id="typingText"></span>
+  </h1>
+  <h1>
+      <span class="roller typing-container" id="typingNumber"></span>
+  </h1>
+
+  <script>
+      const text1 = "15th & 16th April";
+      const text2 = "GCET";
+      const typingText = document.getElementById("typingText");
+      const typingNumber = document.getElementById("typingNumber");
+
+      let i = 0, j = 0;
+
+      function typeWriter() {
+          if (i < text1.length) {
+              typingText.innerHTML += text1.charAt(i);
+              i++;
+              setTimeout(typeWriter, 100);
+          } else if (j < text2.length) {
+              if (j === 0) typingNumber.style.borderRight = "3px solid white"; // Add cursor for second line
+              typingNumber.innerHTML += text2.charAt(j);
+              j++;
+              setTimeout(typeWriter, 100);
+          } else {
+              typingNumber.style.borderRight = "none"; // Remove cursor after typing completes
+          }
+      }
+      typeWriter();
+  </script>
+      </h1>
+      
+  </div>
+
+  <div class="about-title py-5 pb-0" id="about">
+    <h1 style="font-family:Outfit;">About Geethanjali</h1>
+  </div>
+
+  <main id="main">
+    <section class="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 d-flex justify-content-center position-relative">
+            <img src="assets/img/chair-princi.webp" class="img-fluid" alt="" />
+          </div>
+
+          <div class="col-xl-7 col-lg-6 p-3 icon-boxes d-flex justify-content-center px-lg-5">
+            <p>
+              Geethanjali College of Engineering & Technology is dedicated to staying ahead of the curve in a rapidly evolving technological landscape.The vision of providing students with an unparalleled educational experience, one that caters to their holistic development and empowers them to become well-rounded global citizens.The future demands not only technical expertise but also a broader perspective. That's why we offer a unique blend of rigorous academics, practical application, and personal growth opportunities. Our integrated curriculum features a diverse range of technical courses, interdisciplinary research projects, industry collaborations, and workshops on entrepreneurship and personality development.Through this comprehensive approach, we equip our students with the skills and knowledge they need to thrive in the globalized world. They graduate not just as technically adept engineers, but as confident and responsible individuals ready to make a positive impact.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="counts" class="counts">
+      <div class="container">
+        <div class="text-center title">
+          <h3 style="font-family:Outfit;">About BHASWARA</h3>
+          <p><b>Some important statistics</b></p>
+        </div>
+
+        <div class="row counters position-relative">
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="56" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of faculty and students</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="23" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of coordinators</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of Events</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="364" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>No of students participated in Bhaswara 2023</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="event" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2 style="font-family:Outfit;">Events</h2>
+          <p>
+            “Bhaswara-2k25” is the 18th Edition of the Technical and Management Fest, an Annual Event
+            of the Geethanjali College of Engineering and Technology, Keesara, Medchal (GCET). At the
+            outset we, the Conveners wholeheartedly congratulate you all for the participation of
+            Bhaswara-2k25 being held during April 15-16, 2025.
+          </p>
+        </div>
+
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cse">
+            <div class="zoom">
+              <a href="./events.html#cse-events" title="More Details"><img
+                src="assets/img/portfolio/cse.webp" class="img-fluid"></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cse">
+            <div class="zoom">
+              <a href="./events.html#aiml-events" title="More Details">
+                <img src="assets/img/portfolio/aiml.webp" class="img-fluid" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cse">
+            <div class="zoom">
+              <a href="./events.html#cse-ds-events" title="More Details"><img src="assets/img/portfolio/ds.webp" class="img-fluid" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-cse">
+            <div class="zoom">
+              <a href="./events.html#cse-cs-events" title="More Details"><img src="assets/img/portfolio/cs.webp" class="img-fluid" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-ece">
+            <div class="zoom">
+              <a href="./events.html#ece-events" title="More Details"><img src="assets/img/portfolio/ece.webp" class="img-fluid" alt="" /></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-eee">
+            <div class="zoom">
+              <a href="./events.html" title="More Details"><img src="assets/img/portfolio/eee.webp" class="img-fluid" alt="" /></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-civil">
+            <div class="zoom">
+              <a href="./events.html#civil-events" title="More Details"><img src="assets/img/portfolio/civil.webp" class="img-fluid" alt="" /></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mech">
+            <div class="zoom">
+              <a href="./events.html#mech-common-events" title="More Details"><img src="assets/img/portfolio/mech.webp" class="img-fluid" alt="" /></a>
+              
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-mba">
+            <div class="zoom">
+              <a href="./events.html#mba-common-events" title="More Details"><img src="assets/img/portfolio/mba.webp" class="img-fluid" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-it">
+            <div class="zoom">
+              <a href="./events.html#it-events" title="More Details"><img src="assets/img/portfolio/it.webp" class="img-fluid" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="testimonials">
+      <div class="container position-relative">
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Mr. G.R. Ravinder Reddy</h3>
+                <h4>Chairman</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  I welcome you all to BHASWARA-2k25, the annual technical fest of Geethanjali College
+                  of Engineering and Technology, Science and Technology has evolved enormously adding new dimensions to
+                  our knowledge.
+                  Right from Stone Age to this modern era human race has witnessedit all. Today almost every
+                  single of automation, object that welcome across is a thoughtful implementation of science and
+                  technology.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <h3>Dr. S.Udaya Kumar</h3>
+                <h4>Principal</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  It is indeed a matter of utmost pleasure for me to welcome you all to BHASWARA
+                  – 2025, the annual technical fest of Geethanjali College of Engineering and Technology.
+                  Over a past few years our college has played a pivotal role in imparting technical
+                  knowledge to the students.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <h3>Dr. L. Kiran Kumar Reddy</h3>
+                <h4>Convener</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  “Bhaswara-2k25” is the 18th Edition of the Technical and Management Fest, an Annual Event
+                  of the Geethanjali College of Engineering and Technology, Keesara, Medchal (GCET). At the
+                  outset we, the Conveners wholeheartedly congratulate you all for the participation of
+                  Bhaswara-2k25 being held during April 15-16, 2025.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                
+                <h3>Dr.G.Kalyani</h3>
+                <h4>Co-Convener</h4>
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  On behalf of the entire organizing team of Bhaswara-2k25 and on our own behalf, we thank
+                  all the student participants for the excellent competitive spirit, members of the Bhaswara 2k25
+                  organizing, and core teams, Competitions Jury, the Institute’s Academic Departments, and
+                  service units, Depts., Without Support from the Chairman, Teja Educational Society: Sri. G.
+                  Ravindar Reddy garu and a constant encouragement by the Principal: Prof. Dr. Udaya Kumar
+                  Susarla garu this Bhaswara-2k25 could not have been made possible.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section id="coordinators" class="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2><a style="font-family:Outfit;">coordinators</a></h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li onclick="myFunctioncommon()"><a style="font-family:Outfit;">Common Events</a></li>
+              <li onclick="myFunctioncse()"><a style="font-family:Outfit;">CSE</a></li>
+              <li onclick="myFunctionaiml()"><a style="font-family:Outfit;">AI-ML</a></li>
+              <li onclick="myFunctioncseds()"><a style="font-family:Outfit;">CSE-DS</a></li>
+              <li onclick="myFunctioncsecs()"><a style="font-family:Outfit;">CSE-CS</a></li>
+              <li onclick="myFunctionece()"><a style="font-family:Outfit;">ECE</a></li>
+              <li onclick="myFunctioneee()"><a style="font-family:Outfit;">EEE</a></li>
+              <li onclick="myFunctioncivil()"><a style="font-family:Outfit;">CIVIL</a></li>
+              <li onclick="myFunctionmech()"><a style="font-family:Outfit;">MECH</a></li>
+              <li onclick="myFunctionmba()"><a style="font-family:Outfit;">MBA</a></li>
+              <li onclick="myFunctionit()"><a style="font-family:Outfit;">IT & IOT</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row">
+          <span id="demo1" style="color:var(--primary-color); font-size: 50px; text-align: center;  font-family:Outfit; font-weight:600;", sans-serif;
+          ;">CSE</span><br />
+
+          <div class="col-lg-2 col-md-3 pb-3">
+          </div>
+
+          <div class="col-lg-3 col-md-3 align-items-center pb-3">
+            <br />
+            <span id="demo4" style="color:var(--primary-color); font-size: 20px; font-weight: bold ;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Faculty
+              Coordinators</span><br />
+            <span id="demo5" style="color: #333333; font-size: 20px"><b>Dr. Neha Nandal</b><br />
+              8368959558<br/><br /><b>Mr. R V Sudhakar</b><br />
+              9705006254</span><br />
+            <br />
+          </div>
+
+          <div class="col-lg-3 col-md-3 pb-3">
+            <br />
+            <span id="demo2" style="color:var(--primary-color); font-size: 20px; font-weight: bold;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Student
+              Coordinators</span><br />
+            <span id="demo3" style="color: #333333; font-size: 20px"><b>Praneetha</b><br />
+              9494695735<br /><br />
+              <b>E. Dhanush</b><br />
+              8019618201</span><br />
+            <br />
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+            <br />
+            <span style="color:var(--primary-color); font-size: 25px; font-weight: bold;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Convener</span><br />
+            <span style="color: #333333; font-size: 20px;font-weight: bolder;">Dr. L. Kiran Kumar Reddy</span><br /><br />
+            <span style="color:var(--primary-color); font-size: 25px; font-weight: bold;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Co Convener</span><br />
+            <span style="color: #333333; font-size: 20px;font-weight: bolder;">Dr. G Kalyani</span><br />
+ 
+            &nbsp;
+          </div>
+        </div>
+      </div>
+
+      <script>
+        // Get all buttons on the page
+        var buttons = document.querySelectorAll("button");
+
+        // Add a click event listener to each button
+        buttons.forEach(function (button) {
+          button.addEventListener("click", function () {
+            // Remove the 'clicked' class from all buttons
+            buttons.forEach(function (button) {
+              button.classList.remove("clicked");
+            });
+            // Add the clcked class to be clicke d again for the purpose of adding and removing the class elements
+            //This can be used for the pupose of
+            this.classList.add("clicked");
+          });
+        });
+      </script>
+
+      <script>
+        function myFunctioncse() {
+          document.getElementById("demo1").innerHTML = "CSE";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>Praneetha</b><br>9494695735<br><br><b>E. Dhanush</b><br>8019618201 ";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Dr. Neha Nandal</b> <br>8368959558<br><br><b>Mr. R V Sudhakar </b><br>9705006254";
+        }
+
+        function myFunctioncommon() {
+          document.getElementById("demo1").innerHTML = "Common Events";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            " <b>A. Praneeth Kumar Reddy </b><br>8978769195<br><br> <b>K. Himasri</b><br>9849851715";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Dr. P. Arpitha</b><br>9959894272<br><br><b>Dr. G. Bindu Madhavi </b><br>9848443421";
+        }
+
+        function myFunctionaiml() {
+          document.getElementById("demo1").innerHTML = "AI-ML";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>S. Harshitha</b><br>9246284918 <br><br><b>Y. Mohammad Adil </b><br>9014936288<br><br>";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Mr. H. V. Ramana Rao <br>9440220021 <br><br><b>Ms. T. Kranthika </b><br>8074709306<br>";
+        }
+
+        function myFunctioncseds() {
+          document.getElementById("demo1").innerHTML = "CSE-DS";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>P. Pranavi</b> <br>7013459324<br><br><b>L. Srinivas Prabhas</b><br>8688348376";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Ms. G. Rajasri </b><br>9030449122<br><br><b>Ms. K. Srilatha</b><br>9177275091";
+        }
+        function myFunctioncsecs() {
+          document.getElementById("demo1").innerHTML = "CSE-CS";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>U. Likith Kumar </b><br>9701360901<br><br><b>V. Varun Kumar</b> <br>7396605957 ";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Mr. A. Shraban Kumar</b><br>8328608433<br><br><b>Ms. S. Spandana</b><br>8897611266 ";
+        }
+
+        function myFunctionit() {
+          document.getElementById("demo1").innerHTML = "IT & IOT";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>G. Abhinav </b><br>9542712738   <br><br> <b> D. Shashank </b><br>6303458698";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Mr. B. Ramavath</b> <br>9866249653 <br><br><b> Mr. P. Rahul Das</b><br>9676338610";
+        }
+
+        function myFunctionece() {
+          document.getElementById("demo1").innerHTML = "ECE";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>D. Pranay </b><br>9030907634 <br><br> <b>V. Yamini</b> <br>9642511397";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Mr. R. Odaiah </b><br>908005296 <br><br><b> Ms. S. Jyothirmayee</b> <br>9966812220";
+        }
+
+        function myFunctioneee() {
+          document.getElementById("demo1").innerHTML = "EEE";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>R. Sai Prasan</b><br>8688454769 <br><br><b>T. Keerthi Priya </b><br>9985571576";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Ms. V. Padmaja </b><br>8186855725 <br><br><b>Ms. B. Srujana </b><br>9381844132";
+        }
+
+        function myFunctionmech() {
+          document.getElementById("demo1").innerHTML = "MECH";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>K. Rohith Reddy </b><br>8464816758<br><br><b>G. Vikash </b> <br>8019988581";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Mr. P. Sudheer Rao</b><br>7032985115<br><br><b>Mr. P. Sandeep Kumar</b><br>8978451261 ";
+        }
+
+        function myFunctioncivil() {
+          document.getElementById("demo1").innerHTML = "CIVIL";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>V. Dheeraj   </b> <br>7382251846    <br><br><b> R. Anudeep </b>   <br>9704765138";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Mr. D. Varun Kumar </b><br>9603518307<br><br><b> Ms. V. Navaneetha</b> <br>9542671824";
+        }
+
+        function myFunctionmba() {
+          document.getElementById("demo1").innerHTML = "MBA";
+          document.getElementById("demo2").innerHTML = "Student Coordinators";
+          document.getElementById("demo3").innerHTML =
+            "<b>V. Saranya </b><br>9398338782<br><br><b> M. Sravani </b><br>8309484142";
+          document.getElementById("demo4").innerHTML = "Faculty Coordinators";
+          document.getElementById("demo5").innerHTML =
+            "<b>Mrs. Shahnaz Begum</b><br>8801057680<br><br><b>Mrs. K. Lavanya</b><br>8500179169";
+        }
+      </script>
+    </section>
+    <div class="section-title">
+    <h2> <a style="font-family: Outfit">Students outside GCET & GCP must bring their college ID Cards as proof
+      of Identity</a>
+      
+    </h2>
+    </div>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-titlee">
+          <h2><a style="font-family:Outfit"><b>Contact</b></a></h2>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-8">
+            <iframe style="border: 0; width: 100%; height: 270px"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.726799085031!2d78.62883861450712!3d17.520550287998926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9d3704b16971%3A0x522242e0977760ef!2sGeethanjali%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1654660505448!5m2!1sen!2sin"
+              frameborder="0" allowfullscreen>
+            </iframe>
+          </div>
+
+          <div class="col-lg-2">
+            <div class="info">
+              <br />
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Cheeryala(V)<br>
+                  Keesara(M), Medchal Dist.<br>
+                  Telangana, INDIA<br>
+                  PIN: 501301
+                  
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>bhaswara@gcet.edu.in</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h4>Geethanjali College of Engineering and Technology</h4>
+            <p>
+              Cheeryala(V)<br />
+              Keesara(M), Medchal Dist.<br />
+              Telangana,INDIA<br />
+              PIN: 501301
+              <br /><br />
+
+              <b style="font-size: larger;"><strong>Email :</strong> bhaswara@gcet.edu.in<br /></b>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="./index.html">Home</a></li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="./index.html#about">About Bhaswara</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i> <a href="./events.html">Events</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="./index.html#coordinators">Coordinators</a>
+              </li>
+              <li>
+                <i class="bx bx-chevron-right"></i>
+                <a href="./posters.html">Posters</a>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+
+            <div class="social-links mt-3">
+              <a href="https://twitter.com/GCTCPORTAL" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/groups/gctcportal" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/gctcportal/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/gctc-portal-03a4493a" class="linkedin"><i
+                  class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <div class="copyright">
+        <p>
+          &copy; Designed by
+          <strong><span><a href="https://komuravellyashish.netlify.app/">Ashish</a></span></strong>
+          and <strong><span>
+            <a href="http://www.linkedin.com/in/udayparam" target="_blank">Uday Param</a></span></strong> | Maintained By
+          <strong><a href="http://www.gctcportal.in">Team GCTCPORTAL</a></strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
